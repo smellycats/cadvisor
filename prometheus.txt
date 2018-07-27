@@ -1,0 +1,1 @@
+docker run -d --name prometheus --net=host --restart=always -v /home/core/prometheus:/etc/prometheus -v /var/sxstorage/prometheus:/prometheus quay.io/prometheus/prometheus --config.file=/etc/prometheus/prometheus.yml --storage.tsdb.path=/prometheus --storage.tsdb.retention=7d

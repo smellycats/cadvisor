@@ -1,0 +1,1 @@
+docker run -it -d -p 9308:9308 --name kafka_exporter --restart=always danielqsj/kafka-exporter --kafka.server=10.47.223.67:9092 --kafka.server=10.47.223.68:9092 --kafka.server=10.47.223.69:9092
